@@ -10,7 +10,15 @@
                           </h3>
                           <ul>
                               <li v-for="item in listOne" :key="item.id">
-                                  {{item.text}}
+                                  <a href="">{{item.text}}</a>
+                              </li>
+                          </ul>
+                          <h3 class="last-list">
+                              SHOP
+                          </h3>
+                          <ul>
+                              <li v-for="item in listFour" :key="item.id">
+                                  <a href="">{{item.text}}</a>
                               </li>
                           </ul>
                       </div>
@@ -20,7 +28,7 @@
                           </h3>
                           <ul>
                               <li v-for="item in listTwo" :key="item.id">
-                                  {{item.text}}
+                                  <a href="">{{item.text}}</a>
                               </li>
                           </ul>
                       </div>
@@ -30,21 +38,10 @@
                           </h3>
                           <ul>
                               <li v-for="item in listThree" :key="item.id">
-                                  {{item.text}}
+                                  <a href="">{{item.text}}</a>
                               </li>
                           </ul>
                       </div>
-                      <div class="list-links">
-                          <h3>
-                              SHOP
-                          </h3>
-                          <ul>
-                              <li v-for="item in listFour" :key="item.id">
-                                  {{item.text}}
-                              </li>
-                          </ul>
-                      </div>
-
                   </div>
               </div>
           </div>
@@ -57,11 +54,11 @@
                   </div>
                   <div class="flex-2">
                       <h3>FOLLOW US</h3>
-                      <img src="../assets/img/footer-facebook.png" alt="">
-                      <img src="../assets/img/footer-twitter.png" alt="">
-                      <img src="../assets/img/footer-youtube.png" alt="">
-                      <img src="../assets/img/footer-pinterest.png" alt="">
-                      <img src="../assets/img/footer-periscope.png" alt="">
+                      <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
+                      <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>
+                      <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>
+                      <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                      <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>
                   </div>
               </div>
           </div>
@@ -188,6 +185,8 @@ export default {
 </script>
 
 <style lang="scss">
+    @import "../assets/style/vars.scss";
+
     .upper{
         background-image: url(../assets/img/footer-bg.jpg);
 
@@ -209,10 +208,6 @@ export default {
                     margin-right: 50px;
                     margin-bottom: 30px;
 
-                    &:last-child{
-                        padding-top: 0;
-                    }
-
                     h3{
                     color: white;
                     padding-bottom: 10px;
@@ -222,10 +217,18 @@ export default {
                     ul{
                         list-style: none;
 
-                        li{
+                        li a{
                             text-decoration: none;
                             color: lightgray;
+
+                            &:hover{
+                                color: $blue-dc;
+                            }
                         }
+                    }
+
+                    .last-list{
+                        padding-top: 20px;
                     }
                 }
             }
@@ -246,10 +249,14 @@ export default {
             button{
             background-color: #333333;
             padding: 16px;
-            border: 3px solid royalblue;
+            border: 3px solid $blue-dc;
             color: white;
             font-weight: bold;
             cursor: pointer;
+
+            &:hover{
+                background-color: $blue-dc;
+            }
 
             }
 
@@ -260,10 +267,11 @@ export default {
                 h3{
                     display: inline-block;
                     margin-right: 20px;
-                    color: royalblue;
+                    color: $blue-dc;
                 }
 
                 img{
+                    width: 64px;
                     padding: 0 8px;
                 }
             }
