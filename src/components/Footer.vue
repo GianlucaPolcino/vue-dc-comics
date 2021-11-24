@@ -215,7 +215,7 @@ export default {
 
                     h3{
                     color: white;
-                    padding-bottom: 20px;
+                    padding-bottom: 10px;
                     font-weight: bold;
                     }
 
