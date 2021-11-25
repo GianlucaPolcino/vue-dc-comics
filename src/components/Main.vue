@@ -38,7 +38,7 @@ export default {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 18px 0;
+            padding: 34px 0;
             margin: 0 auto;
         }
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="card">
       <img :src="card.thumb" :alt="card.series">
-      <h4>{{card.series}}</h4>
+      <h5>{{card.series}}</h5>
   </div>
 </template>
 
@@ -17,13 +17,16 @@ export default {
 <style lang="scss">
     .card{
         flex-basis: 15%;
-        padding: 10px;
+        padding: 8px;
 
         img{
             width: 100%;
+            height: 100px;
+            object-fit: cover;
+            object-position: top;
         }
 
-        h4{
+        h5{
             color: white;
         }
     }
