@@ -5,17 +5,17 @@
               <div class="list">
                   <div class="wrapper">
                       <div class="list-links">
-                          <h3>
+                          <h2>
                               DC COMICS
-                          </h3>
+                          </h2>
                           <ul>
                               <li v-for="item in listOne" :key="item.id">
                                   <a href="">{{item.text}}</a>
                               </li>
                           </ul>
-                          <h3 class="last-list">
+                          <h2 class="last-list">
                               SHOP
-                          </h3>
+                          </h2>
                           <ul>
                               <li v-for="item in listFour" :key="item.id">
                                   <a href="">{{item.text}}</a>
@@ -23,9 +23,9 @@
                           </ul>
                       </div>
                       <div class="list-links">
-                          <h3>
+                          <h2>
                               DC
-                          </h3>
+                          </h2>
                           <ul>
                               <li v-for="item in listTwo" :key="item.id">
                                   <a href="">{{item.text}}</a>
@@ -33,9 +33,9 @@
                           </ul>
                       </div>
                       <div class="list-links">
-                          <h3>
+                          <h2>
                               SITES
-                          </h3>
+                          </h2>
                           <ul>
                               <li v-for="item in listThree" :key="item.id">
                                   <a href="">{{item.text}}</a>
@@ -208,7 +208,7 @@ export default {
                     margin-right: 50px;
                     margin-bottom: 30px;
 
-                    h3{
+                    h2{
                     color: white;
                     padding-bottom: 10px;
                     font-weight: bold;

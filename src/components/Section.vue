@@ -52,7 +52,7 @@ export default {
 
         .flex{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             margin: 0 auto;
             color: white;

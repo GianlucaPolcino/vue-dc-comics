@@ -1,24 +1,44 @@
 <template>
   <div class="provvisory">
       <div class="container">
-        <h2> --> Content goes here  </h2>
-    </div>
+          <div class="card-flex">
+              <Product
+              v-for="(card, index) in cards"
+              :key="index"
+              :card="card"
+               />
+          </div>
+      </div>
   </div>
 </template>
 
 <script>
+import cards from "../assets/data/productData.js";
+import Product from "./Product.vue"
+
 export default {
-    name: "Main"
+    name: "Main",
+    components: {
+        Product
+    },
+
+    data(){
+        return{
+            cards,
+        }
+    }
 }
 </script>
 
 <style lang="scss">
     .provvisory{
         background-color: #222222;
-        height: 120px;
 
-        h2{
-            color: white;
+        .card-flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 18px 0;
         }
     }
 </style>
