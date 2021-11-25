@@ -201,8 +201,6 @@ export default {
                 width: 60%;
                 display: flex;
                 flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: start;
                 .list-links{
                     padding-top: 30px;
                     margin-right: 50px;
