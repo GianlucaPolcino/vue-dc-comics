@@ -1,5 +1,5 @@
 <template>
-  <div class="provvisory">
+  <div class="main-bg">
       <div class="container">
           <div class="card-flex">
               <Product
@@ -31,13 +31,14 @@ export default {
 </script>
 
 <style lang="scss">
-    .provvisory{
+    .main-bg{
         background-color: #222222;
 
         .card-flex{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             padding: 34px 0;
             margin: 0 auto;
         }
