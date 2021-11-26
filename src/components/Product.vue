@@ -21,12 +21,13 @@ export default {
 
         img{
             width: 100%;
-            height: 100px;
+            height: 120px;
             object-fit: cover;
             object-position: top;
         }
 
         h5{
+            padding-top: 6px;
             color: white;
         }
     }
